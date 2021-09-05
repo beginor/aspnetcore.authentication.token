@@ -1,7 +1,11 @@
-# Custom Token Authentication for .Net Core
+# Custom Token Authentication for AspNetCore
 
-Custom token authentication for .Net 5.0+, allow access your webapi with `$token` in
+Custom token authentication for Asp.NetCore 5.0+, allow access your webapi with `$token` in
 query string param or the `Authorization` header with `$token {data_access_token}` format.
+
+How to setup?
+
+Please refer to [Setup.cs](test/WebTest/Startup.cs) .
 
 Usage:
 
