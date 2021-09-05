@@ -5,7 +5,7 @@ query string param or the `Authorization` header with `$token {data_access_token
 
 How to setup?
 
-Please refer to [Setup.cs](test/WebTest/Startup.cs) .
+Please refer to [Setup.cs](test/WebTest/Startup.cs#L35) .
 
 Usage:
 
