@@ -4,14 +4,20 @@
     <TargetFramework>net5.0</TargetFramework>
     <RootNamespace>Beginor.AspNetCore.Authentication.Token</RootNamespace>
     <AssemblyName>Beginor.AspNetCore.Authentication.Token</AssemblyName>
+    <Authors>beginor</Authors>
+    <Description>Custom Authentication for aspnetcore 5.0+, allow access your webapi with $token in query string param or the Authorization header with $token {data_access_token} format.</Description>
+    <PackageId>Beginor.AspNetCore.Authentication.Token</PackageId>
+    <Owners>beginor</Owners>
+    <PackageProjectUrl>https://github.com/beginor/aspnetcore.authentication.token</PackageProjectUrl>
+    <PackageVersion>1.0.0</PackageVersion>
+    <PackageReleaseNotes>Initial release.</PackageReleaseNotes>
+    <PackageTags>authentication,aspnetcore</PackageTags>
+    <Title>Beginor.AspNetCore.Authentication.Token</Title>
+    <PackageLicenseUrl>https://github.com/beginor/aspnetcore.authentication.token/blob/main/LICENSE.md</PackageLicenseUrl>
   </PropertyGroup>
 
   <ItemGroup>
     <FrameworkReference Include="Microsoft.AspNetCore.App" />
   </ItemGroup>
-
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <WarningLevel>4</WarningLevel>
-  </PropertyGroup>
 
 </Project>
