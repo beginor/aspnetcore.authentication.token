@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net5.0</TargetFramework>
+    <TargetFramework>net6.0</TargetFramework>
     <RootNamespace>Beginor.AspNetCore.Authentication.Token</RootNamespace>
     <AssemblyName>Beginor.AspNetCore.Authentication.Token</AssemblyName>
     <Authors>beginor</Authors>
@@ -9,8 +9,8 @@
     <PackageId>Beginor.AspNetCore.Authentication.Token</PackageId>
     <Owners>beginor</Owners>
     <PackageProjectUrl>https://github.com/beginor/aspnetcore.authentication.token</PackageProjectUrl>
-    <PackageVersion>1.0.0</PackageVersion>
-    <PackageReleaseNotes>Initial release.</PackageReleaseNotes>
+    <PackageVersion>6.0.0</PackageVersion>
+    <PackageReleaseNotes>Upgrade to dotnet 6.0.0 .</PackageReleaseNotes>
     <PackageTags>authentication,aspnetcore</PackageTags>
     <Title>Beginor.AspNetCore.Authentication.Token</Title>
     <PackageLicenseUrl>https://github.com/beginor/aspnetcore.authentication.token/blob/main/LICENSE.md</PackageLicenseUrl>
