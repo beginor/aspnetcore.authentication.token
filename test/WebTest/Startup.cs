@@ -7,7 +7,6 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-
 using Beginor.AspNetCore.Authentication.Token;
 using WebTest.Providers;
 
@@ -34,16 +33,16 @@ public class Startup {
                         var provider = context.HttpContext
                             .RequestServices
                             .GetService<UserTokenProvider>();
-                        var token = provider.GetById(context.Token);
+                        var token = provider!.GetById(context.Token!);
                         if (token == null) {
                             context.Fail("Invalid token!");
                             return Task.CompletedTask;
                         }
                         var claims = new List<Claim> {
-                            new(ClaimTypes.NameIdentifier, token.Id),
-                            new(ClaimTypes.Name, token.Username)
+                            new(ClaimTypes.NameIdentifier, token.Id!),
+                            new(ClaimTypes.Name, token.Username!)
                         };
-                        claims.AddRange(token.Roles.Select(role => new Claim(ClaimTypes.Role, role)));
+                        claims.AddRange(token.Roles!.Select(role => new Claim(ClaimTypes.Role, role)));
                         var identity = new ClaimsIdentity(claims, context.Scheme.Name);
                         var principal = new ClaimsPrincipal(identity);
                         context.Principal = principal;

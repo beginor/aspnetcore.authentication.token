@@ -1,20 +1,24 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using Microsoft.Extensions.Options;
 using WebTest.Models;
 
-namespace WebTest.Providers; 
+namespace WebTest.Providers;
 
 public class UserTokenProvider {
 
-    private IList<UserToken> tokens;
+    private readonly IList<UserToken> tokens;
 
     public UserTokenProvider(IOptions<UserTokenOptions> options) {
         tokens = options.Value.Tokens;
     }
 
-    public UserToken GetById(string id) {
-        return this.tokens.FirstOrDefault(tk => tk.Id == id);
+    public UserToken? GetById(string id) {
+        if (id == null) {
+            throw new ArgumentNullException(nameof(id));
+        }
+        return tokens.FirstOrDefault(tk => tk.Id == id);
     }
 
 }
