@@ -10,8 +10,8 @@
     <PackageId>Beginor.AspNetCore.Authentication.Token</PackageId>
     <Owners>beginor</Owners>
     <PackageProjectUrl>https://github.com/beginor/aspnetcore.authentication.token</PackageProjectUrl>
-    <PackageVersion>6.0.0</PackageVersion>
-    <PackageReleaseNotes>Upgrade to dotnet 6.0.0 .</PackageReleaseNotes>
+    <PackageVersion>6.0.1</PackageVersion>
+    <PackageReleaseNotes>use file scope namespace, enable nullablle check .</PackageReleaseNotes>
     <PackageTags>authentication,aspnetcore</PackageTags>
     <Title>Beginor.AspNetCore.Authentication.Token</Title>
     <PackageLicenseUrl>https://github.com/beginor/aspnetcore.authentication.token/blob/main/LICENSE.md</PackageLicenseUrl>
