@@ -54,7 +54,7 @@ public class TokenHandler : AuthenticationHandler<TokenOptions> {
         if (!string.IsNullOrEmpty(token)) {
             return token;
         }
-        string authorization = Request.Headers.Authorization;
+        string? authorization = Request.Headers.Authorization;
         if (!string.IsNullOrEmpty(authorization)) {
             var scheme = $"{Options.ParamName} ";
             if (authorization.StartsWith(scheme, StringComparison.OrdinalIgnoreCase)) {
