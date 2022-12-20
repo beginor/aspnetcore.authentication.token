@@ -2,6 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>net7.0</TargetFramework>
+    <LangVersion>latest</LangVersion>
     <Nullable>enable</Nullable>
     <RootNamespace>Beginor.AspNetCore.Authentication.Token</RootNamespace>
     <AssemblyName>Beginor.AspNetCore.Authentication.Token</AssemblyName>
