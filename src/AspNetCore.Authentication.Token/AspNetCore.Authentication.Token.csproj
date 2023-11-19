@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net7.0</TargetFramework>
+    <TargetFramework>net8.0</TargetFramework>
     <LangVersion>latest</LangVersion>
     <Nullable>enable</Nullable>
     <RootNamespace>Beginor.AspNetCore.Authentication.Token</RootNamespace>
@@ -11,8 +11,8 @@
     <PackageId>Beginor.AspNetCore.Authentication.Token</PackageId>
     <Owners>beginor</Owners>
     <PackageProjectUrl>https://github.com/beginor/aspnetcore.authentication.token</PackageProjectUrl>
-    <PackageVersion>7.0.0</PackageVersion>
-    <PackageReleaseNotes>Upgrade to .net 7.0.0, fix nullable check warnings .</PackageReleaseNotes>
+    <PackageVersion>8.0.0</PackageVersion>
+    <PackageReleaseNotes>Upgrade to .net 8.0.0, fix nullable check warnings .</PackageReleaseNotes>
     <PackageTags>authentication,aspnetcore</PackageTags>
     <Title>Beginor.AspNetCore.Authentication.Token</Title>
     <PackageLicenseUrl>https://github.com/beginor/aspnetcore.authentication.token/blob/main/LICENSE.md</PackageLicenseUrl>
