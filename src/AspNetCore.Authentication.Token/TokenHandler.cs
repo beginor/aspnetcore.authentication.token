@@ -12,9 +12,8 @@ public class TokenHandler : AuthenticationHandler<TokenOptions> {
     public TokenHandler(
         IOptionsMonitor<TokenOptions> options,
         ILoggerFactory logger,
-        UrlEncoder encoder,
-        ISystemClock clock
-    ) : base(options, logger, encoder, clock) { }
+        UrlEncoder encoder
+    ) : base(options, logger, encoder) { }
 
     protected new TokenEvents? Events {
         get => base.Events as TokenEvents;
