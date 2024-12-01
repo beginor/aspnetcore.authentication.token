@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Http;
 
-namespace Beginor.AspNetCore.Authentication.Token; 
+namespace Beginor.AspNetCore.Authentication.Token;
 
 public class TokenReceivedContext : ResultContext<TokenOptions> {
 
