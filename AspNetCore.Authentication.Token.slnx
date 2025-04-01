@@ -1,0 +1,12 @@
+<Solution>
+  <Folder Name="/Solution Items/">
+    <File Path="push-package.sh" />
+    <File Path="README.md" />
+  </Folder>
+  <Folder Name="/src/">
+    <Project Path="src/AspNetCore.Authentication.Token/AspNetCore.Authentication.Token.csproj" />
+  </Folder>
+  <Folder Name="/test/">
+    <Project Path="test/WebTest/WebTest.csproj" />
+  </Folder>
+</Solution>
