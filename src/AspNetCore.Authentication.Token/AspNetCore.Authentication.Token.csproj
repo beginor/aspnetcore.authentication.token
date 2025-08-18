@@ -10,10 +10,10 @@
     <Description>Custom Authentication for aspnetcore 5.0+, allow access your webapi with $token in query string param or the Authorization header with $token {data_access_token} format.</Description>
     <PackageId>Beginor.AspNetCore.Authentication.Token</PackageId>
     <Owners>beginor</Owners>
-    <PackageProjectUrl>https://github.com/beginor/aspnetcore.authentication.token</PackageProjectUrl>
-    <PackageVersion>9.0.0</PackageVersion>
-    <PackageReleaseNotes>Upgrade to .net 9.0.0;</PackageReleaseNotes>
-    <PackageTags>authentication,aspnetcore</PackageTags>
+    <PackageVersion>$(PACKAGE_VERSION)</PackageVersion>
+    <PackageReleaseNotes>$(PACKAGE_RELEASE_NOTES)</PackageReleaseNotes>
+    <PackageTags>$(PACKAGE_TAGS)</PackageTags>
+    <PackageProjectUrl>$(PACKAGE_PROJECT_URL)</PackageProjectUrl>
     <Title>Beginor.AspNetCore.Authentication.Token</Title>
     <PackageLicenseUrl>https://github.com/beginor/aspnetcore.authentication.token/blob/main/LICENSE.md</PackageLicenseUrl>
   </PropertyGroup>
