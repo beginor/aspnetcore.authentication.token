@@ -1,7 +1,7 @@
 #!/bin/bash -e
 
-export PACKAGE_VERSION="9.0.0"
-export PACKAGE_RELEASE_NOTES="Update to .NET 9.0.0;"
+export PACKAGE_VERSION="10.0.0"
+export PACKAGE_RELEASE_NOTES="Update to .NET 10.0.0;"
 export PACKAGE_TAGS="authentication,aspnetcore"
 export PACKAGE_PROJECT_URL="https://github.com/beginor/aspnetcore.authentication.token"
 
