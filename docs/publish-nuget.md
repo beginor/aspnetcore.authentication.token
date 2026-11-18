@@ -43,7 +43,9 @@ nuget.org → 用户菜单 → **Trusted Publishing** → **Create**，字段如
 | Workflow File | `publish-nuget.yml`（**只填文件名**，不要带 `.github/workflows/` 前缀） |
 | Environment | 留空 |
 | Scopes | Push new packages and package versions |
-| Glob | `Beginor.AspNetCore.Authentication.Token.*`（包 ID 前缀，如 `Foo.*`） |
+| Glob | `Beginor.AspNetCore.Authentication.Token*`（包 ID 前缀 + `*`） |
+
+> 注意：`Foo.*` 只匹配带后缀的包，不匹配 `Foo` 本身，会导致 push 返回 403。
 
 ## 4. GitHub 仓库变量
 
@@ -87,7 +89,7 @@ git push origin "${PACKAGE_VERSION}"
 
 ## 7. 常见问题
 
-- **`No matching trust policy`**：策略字段与仓库/工作流不匹配。检查 Repository、Workflow File（只填文件名）、Glob 前缀、Environment 是否留空。
+- **`No matching trust policy` / 403 `API key is invalid`**：策略字段与仓库/工作流不匹配。检查 Repository、Workflow File（只填文件名）、Glob 前缀、Environment 是否留空；Glob 写成 `Foo.*` 会漏掉 `Foo` 本身，应写 `Foo*`。
 - **403 / key 过期**：临时 key 只有 1 小时，且不能跨步骤复用；确保 push 紧跟在 login 之后。
 - **版本退化成 1.0.0**：忘记 `source release.env`，或 csproj 没有 import `package-version.props`。
 - **策略显示 Pending**：首次使用需先成功发布一次（或等待 nuget.org 校验），确认字段无误后重试。
