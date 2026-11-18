@@ -1,6 +1,6 @@
 <Solution>
   <Folder Name="/Solution Items/">
-    <File Path="push-package.sh" />
+    <File Path="release.env" />
     <File Path="README.md" />
   </Folder>
   <Folder Name="/src/">

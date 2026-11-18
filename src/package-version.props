@@ -1,0 +1,11 @@
+<Project>
+
+  <!-- Package metadata comes from environment variables defined in release.env -->
+  <PropertyGroup>
+    <PackageVersion>$(PACKAGE_VERSION)</PackageVersion>
+    <PackageReleaseNotes>$(PACKAGE_RELEASE_NOTES)</PackageReleaseNotes>
+    <PackageTags>$(PACKAGE_TAGS)</PackageTags>
+    <PackageProjectUrl>$(PACKAGE_PROJECT_URL)</PackageProjectUrl>
+  </PropertyGroup>
+
+</Project>
